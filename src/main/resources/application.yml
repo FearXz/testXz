@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: project
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/best_project
+    username: omi
+    password: omi
+    driver-class-name: org.postgresql.Driver
+
+flyway:
+  enabled: false
+  locations: classpath:db/migration
